@@ -21,16 +21,32 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Website", "Website\", "{FCE
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "13689"
+		SlnRelativePath = "Website\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookSystem", "ChinookSystem\ChinookSystem.csproj", "{84FFF321-C093-4E5E-A852-EE80E0AF05FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChinookSystem.Data", "ChinookSystem.Data\ChinookSystem.Data.csproj", "{2694C906-0EF6-460A-A965-88984583A9FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FCE99A5E-9549-4269-8FE6-95985536CE18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FCE99A5E-9549-4269-8FE6-95985536CE18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE99A5E-9549-4269-8FE6-95985536CE18}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE99A5E-9549-4269-8FE6-95985536CE18}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{84FFF321-C093-4E5E-A852-EE80E0AF05FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84FFF321-C093-4E5E-A852-EE80E0AF05FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84FFF321-C093-4E5E-A852-EE80E0AF05FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84FFF321-C093-4E5E-A852-EE80E0AF05FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2694C906-0EF6-460A-A965-88984583A9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2694C906-0EF6-460A-A965-88984583A9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2694C906-0EF6-460A-A965-88984583A9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2694C906-0EF6-460A-A965-88984583A9FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
