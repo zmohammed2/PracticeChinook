@@ -16,11 +16,20 @@ namespace ChinookSystem.BLL
     [DataObject]
    public class ArtistController
     {
+        
         //report a dataset containing data from 
         //multiple entities
         //this will use Linq to Entity Access 
         //POCO Classes will be use to define the data
         [DataObjectMethod(DataObjectMethodType.Select,false)]
+        public List<Artist> Artist_ListAll()
+        {
+            using (var context = new ChinookContext())
+            {
+                return context.Artists.ToList();
+            }
+        }
+        [DataObjectMethod(DataObjectMethodType.Select, false)]
         public List<ArtistAlbums> ArtistAlbums_Get()
         {
             //Set up Transaction Area 
