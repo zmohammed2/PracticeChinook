@@ -17,15 +17,15 @@ namespace ChinookSystem.BLL
    public class CustomerController
     {
         [DataObjectMethod(DataObjectMethodType.Select, false)]
-        public List<RepresentativeCustomers> RepresentativeCustomers_Get()
+        public List<RepresentativeCustomers> RepresentativeCustomers_Get(int employeeid)
         {
             //Set up Transaction Area 
             using (var context = new ChinookContext())
             {
 
                 var results = from x in context.Customers
-                              where x.Employee.FirstName.Equals("Jane")
-                                   && x.Employee.LastName.Equals("Peacock")
+                              where x.SupportRepId == employeeid
+                                   
                               orderby x.LastName, x.FirstName
                               select new RepresentativeCustomers
                               {

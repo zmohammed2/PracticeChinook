@@ -2,6 +2,8 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <h1>Entity vs Linq to Entity Query</h1>
+
+    
     <asp:GridView ID="EntityFrameWorkList" runat="server" AutoGenerateColumns="False" DataSourceID="EntityFrameWorkODS" AllowPaging="True">
         <Columns>
             <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name"></asp:BoundField>
