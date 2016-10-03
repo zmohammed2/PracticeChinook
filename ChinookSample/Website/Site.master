@@ -83,6 +83,7 @@
 
                             <asp:MenuItem Text="Queries" Value="linq">
                                 <asp:MenuItem Text="First Sample" NavigateUrl="~/Queries/FirstSample"></asp:MenuItem>
+                                <asp:MenuItem Text="Rep Customers" NavigateUrl="~/Queries/RepresentativeCustomers"></asp:MenuItem>
                                
                             </asp:MenuItem>
 

@@ -41,12 +41,12 @@ namespace ChinookSystem.BLL
                 //to the navigation properties you stated in the Entity class definitions
                 var results = from x in context.Albums
                               where x.ReleaseYear == 2008
-                              orderby x.Artists.Name, x.Title
+                              orderby x.Artist.Name, x.Title
                               select new ArtistAlbums
                               {
                                   //Name and Titles are POCO 
                                   //Class property names
-                                  Name = x.Artists.Name,
+                                  Name = x.Artist.Name,
                                  Title = x.Title
                               };
                 //the following requires the query data in memory
